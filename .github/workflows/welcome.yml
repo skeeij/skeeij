@@ -1,10 +1,10 @@
-name: Post welcome comment
+name: hello and welcome
 on:
   pull_request:
     types: [opened]
 jobs:
   build:
-    name: Post welcome comment
+    name: hello and welcome
     runs-on: ubuntu-latest
         steps:
       - run: gh pr comment $PR_URL --body "Welcome to the repository!"
